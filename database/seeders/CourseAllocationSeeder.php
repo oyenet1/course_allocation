@@ -15,6 +15,6 @@ class CourseAllocationSeeder extends Seeder
      */
     public function run()
     {
-        CourseAllocation::factory(25)->create();
+        CourseAllocation::factory(100)->create();
     }
 }

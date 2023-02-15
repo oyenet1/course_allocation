@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
                 // RoleSeeder::class,
             UserSeeder::class,
             LevelSeeder::class,
-            CourseSeeder::class,
             DepartmentSeeder::class,
             SemesterSeeder::class,
+            CourseSeeder::class,
             CourseAllocationSeeder::class,
         ]);
     }
