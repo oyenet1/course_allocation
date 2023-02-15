@@ -6,17 +6,17 @@ use App\Traits\BelongsToUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Book extends Model
+class CourseAllocation extends Model
 {
-    protected $casts = [
-        'published_at' => 'date',
-    ];
-
     use HasFactory, BelongsToUser;
     protected $guarded = [];
 
-    function categories()
+    function semester()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(Semester::class);
+    }
+    function course()
+    {
+        return $this->belongsTo(Course::class);
     }
 }

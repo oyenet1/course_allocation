@@ -17,13 +17,7 @@ class createProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
-            $table->string('address')->nullable();
-            $table->string('state')->nullable();
-            $table->string('country')->nullable();
-            $table->string('bank_name')->nullable();
-            $table->string('account_no')->nullable();
-            $table->string('wallet_address')->nullable();
-            $table->string('wallet_type')->nullable();
+            $table->json('aos')->nullable(); //area of specialization
             $table->timestamps();
         });
     }

@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
-use App\Traits\BelongsToManyBooks;
+use App\Traits\HasManyAllocation;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Semester extends Model
 {
-    use HasFactory, BelongsToManyBooks;
+    use HasFactory, HasManyAllocation;
     protected $guarded = [];
+
+
 }

@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateConvertersTable extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -13,11 +12,10 @@ class CreateConvertersTable extends Migration
      */
     public function up()
     {
-        Schema::create('converters', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->integer('pounds');
-            $table->integer('dollar');
-            $table->string('royalty');
+            $table->string('name')->unique();
+            $table->date('date_created')->nullable()->default(now()->subWeeks(random_int(1, 20)));
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateConvertersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('converters');
+        Schema::dropIfExists('departments');
     }
-}
+};

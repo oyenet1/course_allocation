@@ -1,13 +1,10 @@
 <?php
 
-use App\Models\Book;
-use App\Models\Category;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBookCategory extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -15,10 +12,9 @@ class CreateBookCategory extends Migration
      */
     public function up()
     {
-        Schema::create('book_category', function (Blueprint $table) {
+        Schema::create('levels', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Book::class)->constrained()->cascadeOnDelete();
-            $table->foreignIdFor(Category::class)->constrained()->cascadeOnDelete();
+            $table->integer('name')->unique();
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ class CreateBookCategory extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('book_category');
+        Schema::dropIfExists('levels');
     }
-}
+};

@@ -2,12 +2,16 @@
 
 namespace App\Models;
 
-use App\Traits\BelongsToManyBooks;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sale extends Model
+class Level extends Model
 {
-    use HasFactory, BelongsToManyBooks;
+    use HasFactory;
     protected $guarded = [];
+
+    function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
 }

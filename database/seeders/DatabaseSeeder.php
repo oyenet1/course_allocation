@@ -16,8 +16,13 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call([
             LaratrustSeeder::class,
-            // RoleSeeder::class,
+                // RoleSeeder::class,
             UserSeeder::class,
+            LevelSeeder::class,
+            CourseSeeder::class,
+            DepartmentSeeder::class,
+            SemesterSeeder::class,
+            CourseAllocationSeeder::class,
         ]);
     }
 }
