@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-list li.active>a {
+      --tw-bg-opacity: 1;
+    //   background-color: rgba(232, 237, 252, var(--tw-bg-opacity));
+      color: white;
+      font-weight: normal;
+    }
+
+
+@layer components {
+    body{
+        @apply font-roboto font-normal;
+    }
+
+    .active{
+        @apply bg-primary;
+    }
+    .alert-success {
+        @apply text-green-500 border-green-600;
+    }
+    .alert-error {
+        @apply text-red-500 border-red-600;
+    }
+    label {
+        @apply text-gray-500;
+    }
+    a.active:active,
+    a.active {
+        @apply text-primary  bg-primary-light border-l-4 font-medium;
+    }
+    li.active-parent {
+        @apply bg-primary-light border-l-4 font-medium border-primary;
+    }
+    a.active-children {
+        @apply text-primary pl-20 font-medium;
+    }
+    .btn {
+        @apply border rounded-lg px-4 py-2 font-medium;
+    }
+
+    .btn-sm {
+        @apply border rounded-lg px-2 py-1 text-sm font-medium;
+    }
+
+    .btn-lg {
+        @apply border rounded-lg px-8 py-4 text-xl font-medium;
+    }
+
+    .submit,
+    .submit-primary {
+        @apply btn;
+    }
+
+    .btn-primary,
+    .submit-primary {
+        @apply text-white bg-primary border-primary;
+    }
+    .btn-primary:hover {
+        @apply text-primary bg-white font-medium;
+    }
+    .btn-secondary,
+    .submit-secondary {
+        @apply text-white bg-secondary border-secondary;
+    }
+    .btn-secondary:hover {
+        @apply text-secondary bg-white font-medium;
+    }
+    .btn-primary-outline {
+        @apply text-primary bg-white border-primary;
+    }
+    .btn-primary-outline:hover {
+        @apply text-white bg-primary font-medium;
+    }
+    .btn-secondary-outline {
+        @apply text-secondary bg-white border-secondary;
+    }
+    .btn-secondary-outline:hover {
+        @apply text-white bg-secondary;
+    }
+
+    .tt {
+        @apply transition transform duration-500;
+    }
+}
