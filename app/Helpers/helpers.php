@@ -32,9 +32,9 @@ function currentUser(): object
 function greeting(): string
 {
     $string = "good morning";
-    if ((intval(date('H') + 1) >= 12) && (intval(date('H') + 1) < 16)) {
+    if ((intval(date('H')) >= 12) && (intval(date('H')) < 16)) {
         $string = 'good afternoon';
-    } elseif (intval(date('H') + 1) >= 16 && intval(date('H') + 1) < 23) {
+    } elseif (intval(date('H')) >= 16 && intval(date('H')) < 23) {
         $string = 'good evening';
     }
     return $string;

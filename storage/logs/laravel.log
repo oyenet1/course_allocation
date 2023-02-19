@@ -2853,3 +2853,773 @@ Stack trace:
 #60 /Users/user/Documents/projects/course_allocation/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #61 {main}
 "} 
+[2023-02-19 22:34:04] local.ERROR: Route [books] not defined. {"view":{"view":"/Users/user/Documents/projects/course_allocation/resources/views/layouts/app.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1888913643 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1583</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1888913643\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","_instance":"<pre class=sf-dump id=sf-dump-1621974408 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1621974408\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","attributes":"<pre class=sf-dump id=sf-dump-133087079 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentAttributeBag</span> {<a class=sf-dump-ref>#1682</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-133087079\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slot":"<pre class=sf-dump id=sf-dump-64321392 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentSlot</span> {<a class=sf-dump-ref>#1823</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1858</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+    <span class=sf-dump-str title=\"6576 characters\">&lt;div wire:id=&quot;y5YfOZ8mEfrFEsOLf6Zv&quot; wire:initial-data=&quot;{&amp;quot;fingerprint&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;y5YfOZ8mEfrFEsOLf6Zv&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;admin-dashboard&amp;quot;,&amp;quot;locale&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;path&amp;quot;:&amp;quot;administrator\\/home&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;GET&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;acj&amp;quot;},&amp;quot;effects&amp;quot;:{&amp;quot;listeners&amp;quot;:[]},&amp;quot;serverMemo&amp;quot;:{&amp;quot;children&amp;quot;:[],&amp;quot;errors&amp;quot;:[],&amp;quot;htmlHash&amp;quot;:&amp;quot;ded1f73a&amp;quot;,&amp;quot;data&amp;quot;:[],&amp;quot;dataMeta&amp;quot;:[],&amp;quot;checksum&amp;quot;:&amp;quot;9fbb438b371b7b601dca70a1fa01699962060887d7093bcf15dac9109f92b05b&amp;quot;}}&quot; class=&quot;grid w-full gap-8 p-8 mx-auto xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;total users&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                20<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-blue-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-blue-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-people&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;Books&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                21<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-red-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-red-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; class=&quot;w-6 h-6 bi bi-journal-richtext 2xl:w-8 2xl:h-8&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;sales&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                    &lt;span&gt;&amp;pound&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                638,103.00<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-green-600 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-green-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-basket&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;performance&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                2%<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-gray-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-gray-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-bar-chart-line&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8 lg:grid-cols-2 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;myChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;pieChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;lineChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;!-- Livewire Component wire-end:y5YfOZ8mEfrFEsOLf6Zv --&gt;</span>
+    \"\"\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-64321392\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__laravel_slots":"<pre class=sf-dump id=sf-dump-41448247 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>__default</span>\" => <span class=sf-dump-note title=\"Illuminate\\Support\\HtmlString
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>HtmlString</span> {<a class=sf-dump-ref>#1856</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">html</span>: \"\"
+  </samp>}
+  \"<span class=sf-dump-key>slot</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentSlot
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentSlot</span> {<a class=sf-dump-ref>#1823</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1858</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+      <span class=sf-dump-str title=\"6576 characters\">&lt;div wire:id=&quot;y5YfOZ8mEfrFEsOLf6Zv&quot; wire:initial-data=&quot;{&amp;quot;fingerprint&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;y5YfOZ8mEfrFEsOLf6Zv&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;admin-dashboard&amp;quot;,&amp;quot;locale&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;path&amp;quot;:&amp;quot;administrator\\/home&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;GET&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;acj&amp;quot;},&amp;quot;effects&amp;quot;:{&amp;quot;listeners&amp;quot;:[]},&amp;quot;serverMemo&amp;quot;:{&amp;quot;children&amp;quot;:[],&amp;quot;errors&amp;quot;:[],&amp;quot;htmlHash&amp;quot;:&amp;quot;ded1f73a&amp;quot;,&amp;quot;data&amp;quot;:[],&amp;quot;dataMeta&amp;quot;:[],&amp;quot;checksum&amp;quot;:&amp;quot;9fbb438b371b7b601dca70a1fa01699962060887d7093bcf15dac9109f92b05b&amp;quot;}}&quot; class=&quot;grid w-full gap-8 p-8 mx-auto xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;total users&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                20<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-blue-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-blue-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-people&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;Books&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                21<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-red-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-red-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; class=&quot;w-6 h-6 bi bi-journal-richtext 2xl:w-8 2xl:h-8&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;sales&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                    &lt;span&gt;&amp;pound&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                638,103.00<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-green-600 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-green-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-basket&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;performance&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                2%<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-gray-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-gray-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-bar-chart-line&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8 lg:grid-cols-2 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;myChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;pieChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;lineChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;!-- Livewire Component wire-end:y5YfOZ8mEfrFEsOLf6Zv --&gt;</span>
+      \"\"\"
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-41448247\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":1,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [books] not defined. at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:467)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\\Routing\\UrlGenerator->route('books', Array, true)
+#1 /Users/user/Documents/projects/course_allocation/resources/views/layouts/app.blade.php(237): route('books')
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#7 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(104): Illuminate\\View\\View->render()
+#12 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php(5): Illuminate\\View\\Factory->renderComponent()
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#15 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#73 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#75 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [books] not defined. at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:467)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\\Routing\\UrlGenerator->route('books', Array, true)
+#1 /Users/user/Documents/projects/course_allocation/storage/framework/views/b3b7c8f5d851c2d8cbb7399d8f0889b47b2e035c.php(238): route('books')
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#7 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(104): Illuminate\\View\\View->render()
+#12 /Users/user/Documents/projects/course_allocation/storage/framework/views/cfe97bf8c4d529b71e9a9404da71465c3c9e7af0.php(6): Illuminate\\View\\Factory->renderComponent()
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#15 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#73 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#75 {main}
+"} 
+[2023-02-19 22:37:11] local.ERROR: Route [books] not defined. {"view":{"view":"/Users/user/Documents/projects/course_allocation/resources/views/layouts/app.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-65447300 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1583</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-65447300\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","_instance":"<pre class=sf-dump id=sf-dump-745670340 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-745670340\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","attributes":"<pre class=sf-dump id=sf-dump-883631003 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentAttributeBag</span> {<a class=sf-dump-ref>#1682</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-883631003\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slot":"<pre class=sf-dump id=sf-dump-2040308053 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentSlot</span> {<a class=sf-dump-ref>#1776</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1811</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+    <span class=sf-dump-str title=\"6576 characters\">&lt;div wire:id=&quot;H7CaT7jgFEgYhvgXNVfh&quot; wire:initial-data=&quot;{&amp;quot;fingerprint&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;H7CaT7jgFEgYhvgXNVfh&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;admin-dashboard&amp;quot;,&amp;quot;locale&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;path&amp;quot;:&amp;quot;administrator\\/home&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;GET&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;acj&amp;quot;},&amp;quot;effects&amp;quot;:{&amp;quot;listeners&amp;quot;:[]},&amp;quot;serverMemo&amp;quot;:{&amp;quot;children&amp;quot;:[],&amp;quot;errors&amp;quot;:[],&amp;quot;htmlHash&amp;quot;:&amp;quot;e81d37ba&amp;quot;,&amp;quot;data&amp;quot;:[],&amp;quot;dataMeta&amp;quot;:[],&amp;quot;checksum&amp;quot;:&amp;quot;248da9812e393a71c87178b5afa67f8075482352c6ccacfb4d28288d28bbd272&amp;quot;}}&quot; class=&quot;grid w-full gap-8 p-8 mx-auto xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;total users&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                20<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-blue-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-blue-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-people&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;Books&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                21<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-red-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-red-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; class=&quot;w-6 h-6 bi bi-journal-richtext 2xl:w-8 2xl:h-8&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;sales&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                    &lt;span&gt;&amp;pound&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                834,773.00<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-green-600 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-green-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-basket&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;performance&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                                8%<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-gray-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-gray-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-bar-chart-line&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8 lg:grid-cols-2 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;myChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;pieChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;lineChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"6576 characters\">&lt;!-- Livewire Component wire-end:H7CaT7jgFEgYhvgXNVfh --&gt;</span>
+    \"\"\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-2040308053\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__laravel_slots":"<pre class=sf-dump id=sf-dump-806139885 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>__default</span>\" => <span class=sf-dump-note title=\"Illuminate\\Support\\HtmlString
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>HtmlString</span> {<a class=sf-dump-ref>#1809</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">html</span>: \"\"
+  </samp>}
+  \"<span class=sf-dump-key>slot</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentSlot
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentSlot</span> {<a class=sf-dump-ref>#1776</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1811</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+      <span class=sf-dump-str title=\"6576 characters\">&lt;div wire:id=&quot;H7CaT7jgFEgYhvgXNVfh&quot; wire:initial-data=&quot;{&amp;quot;fingerprint&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;H7CaT7jgFEgYhvgXNVfh&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;admin-dashboard&amp;quot;,&amp;quot;locale&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;path&amp;quot;:&amp;quot;administrator\\/home&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;GET&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;acj&amp;quot;},&amp;quot;effects&amp;quot;:{&amp;quot;listeners&amp;quot;:[]},&amp;quot;serverMemo&amp;quot;:{&amp;quot;children&amp;quot;:[],&amp;quot;errors&amp;quot;:[],&amp;quot;htmlHash&amp;quot;:&amp;quot;e81d37ba&amp;quot;,&amp;quot;data&amp;quot;:[],&amp;quot;dataMeta&amp;quot;:[],&amp;quot;checksum&amp;quot;:&amp;quot;248da9812e393a71c87178b5afa67f8075482352c6ccacfb4d28288d28bbd272&amp;quot;}}&quot; class=&quot;grid w-full gap-8 p-8 mx-auto xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;total users&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                20<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-blue-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-blue-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-people&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;Books&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                21<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-red-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-red-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; class=&quot;w-6 h-6 bi bi-journal-richtext 2xl:w-8 2xl:h-8&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;sales&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                    &lt;span&gt;&amp;pound&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                834,773.00<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-green-600 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-green-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-basket&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;w-full rounded bg-white px-6 md:px-8 py-8 shadow-sm relative overflow-hidden&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;flex justify-between w-full&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;p class=&quot;text-lg xl:text-xl  capitalize text-gray-400&quot;&gt;performance&lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;h1 class=&quot;text-xl lg:text-2xl  text-primary-dark font-medium font-poppin&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                                8%<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/h1&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;text-gray-500 rounded p-2 &quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;span class=&quot;bg-gray-500&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;w-6 h-6 2xl:w-8 2xl:h-8&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-bar-chart-line&quot; viewBox=&quot;0 0 16 16&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">                &lt;path d=&quot;M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z&quot; /&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/svg&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8 lg:grid-cols-2 xl:gap-8 2xl:gap-10&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;myChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;pieChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;div class=&quot;grid gap-8&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;div class=&quot;p-8 bg-white rounded shadow-sm&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">            &lt;canvas id=&quot;lineChart&quot; class=&quot;w-full h-full&quot;&gt;&lt;/canvas&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"6576 characters\">&lt;!-- Livewire Component wire-end:H7CaT7jgFEgYhvgXNVfh --&gt;</span>
+      \"\"\"
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-806139885\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":1,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [books] not defined. at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:467)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\\Routing\\UrlGenerator->route('books', Array, true)
+#1 /Users/user/Documents/projects/course_allocation/resources/views/layouts/app.blade.php(237): route('books')
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#7 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(104): Illuminate\\View\\View->render()
+#12 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php(5): Illuminate\\View\\Factory->renderComponent()
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#15 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#73 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#75 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [books] not defined. at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:467)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(822): Illuminate\\Routing\\UrlGenerator->route('books', Array, true)
+#1 /Users/user/Documents/projects/course_allocation/storage/framework/views/b3b7c8f5d851c2d8cbb7399d8f0889b47b2e035c.php(238): route('books')
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#7 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(104): Illuminate\\View\\View->render()
+#12 /Users/user/Documents/projects/course_allocation/storage/framework/views/cfe97bf8c4d529b71e9a9404da71465c3c9e7af0.php(6): Illuminate\\View\\Factory->renderComponent()
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#15 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#73 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#75 {main}
+"} 

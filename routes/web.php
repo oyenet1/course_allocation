@@ -24,13 +24,12 @@ Route::get('/', function () {
 Route::view('/sales', 'layouts.dashboard');
 
 /* ----------------admin only route ------------*/
-Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:superadmin|admin']], function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:superadmin|administrator']], function () {
     Route::get('/users', \App\Http\Livewire\Users::class)->name('users');
     Route::get('/roles', \App\Http\Livewire\Guard::class)->name('gate');
-    Route::get('/books', \App\Http\Livewire\AllBooks::class)->name('books');
 });
 
-Route::get('/superadmin/home', App\Http\Livewire\AdminDashboard::class)->middleware('role:superadmin|admin');
+Route::get('/administrator/home', App\Http\Livewire\AdminDashboard::class)->middleware('role:superadmin|administrator');
 
 
 Route::get('/home', function () {

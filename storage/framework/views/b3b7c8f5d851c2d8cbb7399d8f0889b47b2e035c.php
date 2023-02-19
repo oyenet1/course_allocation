@@ -13,17 +13,17 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSRF Token -->
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title' ?? 'Adonis and Abbey publishing')</title>
+  <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+  <title><?php echo $__env->yieldContent('title' ?? 'Adonis and Abbey publishing'); ?></title>
 
-  {{-- css  --}}
+  
 
-  {{-- css  --}}
+  
 
-  <link href="{{ mix('css/main.css') }}" rel="stylesheet">
-  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-  {{-- <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script> --}}
-  <script src="{{ mix('js/app.js') }}" defer></script>
+  <link href="<?php echo e(mix('css/main.css')); ?>" rel="stylesheet">
+  <link href="<?php echo e(mix('css/app.css')); ?>" rel="stylesheet">
+  
+  <script src="<?php echo e(mix('js/app.js')); ?>" defer></script>
 
   <meta name="description" content="Adonis Abbey" />
 
@@ -56,7 +56,8 @@
     }
 
   </style>
-  @livewireStyles
+  <?php echo \Livewire\Livewire::styles(); ?>
+
 </head>
 
 <body>
@@ -82,13 +83,13 @@
           <div class="navbar-item dropdown has-divider has-user-avatar">
             <a class="navbar-link">
               <div class="user-avatar">
-                <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="{{ currentUser()->name }}" class="rounded-full" />
+                <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="<?php echo e(currentUser()->name); ?>" class="rounded-full" />
               </div>
-              <div class="is-user-name"><span>{{ currentUser()->name }}</span></div>
+              <div class="is-user-name"><span><?php echo e(currentUser()->name); ?></span></div>
               <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
             </a>
             <div class="navbar-dropdown">
-              <a href="{{ route('profile') }}" class="navbar-item">
+              <a href="<?php echo e(route('profile')); ?>" class="navbar-item">
                 <span class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -106,16 +107,16 @@
                 <span>Messages</span>
               </a>
               <hr class="navbar-divider" />
-              <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="navbar-item" href="{{ route('logout') }}">
+              <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="navbar-item" href="<?php echo e(route('logout')); ?>">
                 <span class="icon"><i class="mdi mdi-logout"></i></span>
                 <span>Log Out</span>
               </a>
             </div>
-            <form class="hidden logout-form" id="logout-form" action="{{ route('logout') }}" method="POST">
-              @csrf
+            <form class="hidden logout-form" id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST">
+              <?php echo csrf_field(); ?>
             </form>
           </div>
-          <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Log out" class="navbar-item hover:text-secondary desktop-icon-only" href="{{ route('logout') }}">
+          <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Log out" class="navbar-item hover:text-secondary desktop-icon-only" href="<?php echo e(route('logout')); ?>">
             <span class="icon"><i class="mdi mdi-logout"></i></span>
             <span>Log out</span>
           </a>
@@ -130,9 +131,9 @@
         </div>
       </div>
       <div class="space-y-1 overflow-y-auto menu is-menu-main">
-        <p class="px-4 py-2 capitalize">{{ greeting() . ', ' }} <span class="font-medium">{{ currentUser()->roles[0]->name }}</span></p>
+        <p class="px-4 py-2 capitalize"><?php echo e(greeting() . ', '); ?> <span class="font-medium"><?php echo e(currentUser()->roles[0]->name); ?></span></p>
         <ul class="space-y-1 menu-list">
-          <li class="{{ request()->is('*/home') ? 'active' : '' }}">
+          <li class="<?php echo e(request()->is('*/home') ? 'active' : ''); ?>">
             <a href="/">
               <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
@@ -143,8 +144,8 @@
               <span class="menu-item-label">Dashboard</span>
             </a>
           </li>
-          <li class="--set-active-profile-html {{ request()->is('profile') ? 'active' : '' }}">
-            <a href="{{ route('profile') }}">
+          <li class="--set-active-profile-html <?php echo e(request()->is('profile') ? 'active' : ''); ?>">
+            <a href="<?php echo e(route('profile')); ?>">
               <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -154,7 +155,7 @@
               <span class="menu-item-label">Profile</span>
             </a>
           </li>
-          <li class="--set-active-profile-html {{ request()->is('messages') ? 'active' : '' }}">
+          <li class="--set-active-profile-html <?php echo e(request()->is('messages') ? 'active' : ''); ?>">
             <a href="">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
@@ -167,7 +168,7 @@
         <p class="menu-label">User Management</p>
         <ul class="space-y-1 menu-list">
           <li>
-            <a class="dropdown {{ request()->is('admin/users') ? 'active' : '' }}">
+            <a class="dropdown <?php echo e(request()->is('admin/users') ? 'active' : ''); ?>">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
@@ -177,8 +178,8 @@
               <span class="icon"><i class="mdi mdi-plus"></i></span>
             </a>
             <ul class="bg-white ">
-              <li class=" {{ request()->is('admin/users') ? 'bg-primary-200  border-l-4 border-white' : 'bg-white' }}">
-                <a href="{{ route('users') }}" class="">
+              <li class=" <?php echo e(request()->is('admin/users') ? 'bg-primary-200  border-l-4 border-white' : 'bg-white'); ?>">
+                <a href="<?php echo e(route('users')); ?>" class="">
                   <span class="md:pl-8">Manage Users</span>
                 </a>
               </li>
@@ -214,24 +215,19 @@
         </ul>
       </div>
 
-      {{-- <div class="absolute bottom-0 flex items-center w-full mx-auto mb-4 rounded-lg justift-between">
-                <div class="hidden mx-auto">
-                    <img src="/img/adonis.png" alt="Adonis and abbey publishers"
-                        class="block w-24 p-4 border-4 rounded-lg lg:w-40 animate border-primary ">
-                </div>
-
-            </div> --}}
+      
     </aside>
 
     <main>
-      {{ $slot ?? '' }}
+      <?php echo e($slot ?? ''); ?>
+
     </main>
 
     <footer class="w-full text-white footer bg-primary">
       <div class="flex flex-col items-center justify-between space-y-3 text-sm md:flex-row md:space-y-0">
         <div></div>
         <div class="flex items-center justify-start space-x-3 uppercase">
-          <div>© All right reserved {{ date('Y') }} Course Allocation System.</div>
+          <div>© All right reserved <?php echo e(date('Y')); ?> Course Allocation System.</div>
 
 
 
@@ -250,8 +246,9 @@
 
   <!-- Scripts below are for demo only -->
   <script type="text/javascript" src="/js/main.min.js"></script>
-  {{-- <script type="text/javascript" src="/js/main.js"></script> --}}
-  @livewireScripts
+  
+  <?php echo \Livewire\Livewire::scripts(); ?>
+
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
@@ -288,15 +285,16 @@
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-  {{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script> --}}
+  
   <script type="text/javascript" src="/js/chart.sample.min.js"></script>
 
 
   <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
 
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css" />
-  @stack('scripts')
-  {{-- @yield('scripts') --}}
+  <?php echo $__env->yieldPushContent('scripts'); ?>
+  
 </body>
 
 </html>
+<?php /**PATH /Users/user/Documents/projects/course_allocation/resources/views/layouts/app.blade.php ENDPATH**/ ?>

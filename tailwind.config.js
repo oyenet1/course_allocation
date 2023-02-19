@@ -19,8 +19,8 @@ module.exports = {
                 transparent: "transparent",
                 current: "currentColor",
                 'primary': {
-                    light: '#d2dcf9',
-                    DEFAULT: '#0d2364',
+                    light: '#e6ffee',
+                    DEFAULT: '#009933',
                     100: "#e8edfc",
                     200: "#a5b8f3",
                     300: "#7895ed",
@@ -30,11 +30,11 @@ module.exports = {
                     700: "#0d2364",
                     800: "#091844",
                     900: "#06102d",
-                    dark: "#030817",
+                    dark: "#003311",
                 },
                 'secondary': {
-                    light: '#fde5ce',
-                    DEFAULT: '#F58820',
+                    light: '#e6ecff',
+                    DEFAULT: '#0033cc',
                     100: "#fef2e7",
                     200: "#fde5ce",
                     300: "#faca9e",
@@ -44,7 +44,7 @@ module.exports = {
                     700: "#aa5708",
                     800: "#7a3e06",
                     900: "#492503",
-                    dark: "#180c01",
+                    dark: "#000d33",
                 },
 
             },
@@ -69,5 +69,5 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [require('@tailwindcss/forms'), ],
+    plugins: [require('@tailwindcss/forms'),],
 }
