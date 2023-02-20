@@ -1,9 +1,9 @@
 <div class="flex flex-col w-full mx-auto gap-8 p-8 xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10">
   <div class="flex items-center justify-between space-x-6">
     
-    <form class="flex items-center gap-4" wire:submit.prevent="save">
+    <form class="flex gap-4" wire:submit.prevent="save">
       <div class="max-w-max">
-        <input type="text" wire:model="name" class="rounded-lg border p-2">
+        <input type="text" wire:model="name" class="rounded-lg border p-2"><br>
         <?php $__errorArgs = ['name'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -15,7 +15,10 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
       </div>
-      <button type="submit" class="bg-primary text-white px-6 py-2 rounded">Add Level</button>
+      <div>
+        <button type="submit" class="bg-primary text-white px-6 py-2 rounded block max-w-max">Add Level</button>
+      </div>
+
     </form>
     <?php if (isset($component)) { $__componentOriginal9c20e82a484d0dd8436a68d661ca92fd15770a65 = $component; } ?>
 <?php $component = App\View\Components\Search::resolve(['name' => 'level'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>

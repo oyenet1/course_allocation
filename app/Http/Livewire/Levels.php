@@ -16,6 +16,29 @@ class Levels extends Component
         $this->search = null;
         $this->cid = null;
     }
+
+    protected $messages = [
+        'name.unique' => 'Level with the same name already exits.'
+    ];
+
+    function save()
+    {
+        $data = $this->validate([
+            'name' => ['required', 'unique:levels,name'],
+        ]);
+
+        $true = Level::create($data);
+        if ($true) {
+            $this->refreshInputs();
+            $this->dispatchBrowserEvent('swal:success', [
+                'icon' => 'success',
+                'confirmButton' => '#0d2364',
+                'text' => 'Level has been added',
+                'title' => 'Added Successfully',
+                'timer' => 5000,
+            ]);
+        }
+    }
     protected $listeners = [
         'deleteConfirm' => 'delete',
         'deleteMutipleConfirm' => 'buckDelete'

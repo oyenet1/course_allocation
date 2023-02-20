@@ -60,6 +60,7 @@ class User extends Authenticatable
         self::created(function ($user) {
             // $user->update(['role' => $user->roles ? $user->roles[0]->name : null]);
             $user->profile()->create([]);
+            // $user->attachRole(2);
         });
 
         // detach roles from user when deleted

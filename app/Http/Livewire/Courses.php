@@ -58,7 +58,10 @@ class Courses extends Component
     public function render()
     {
         $term = "%$this->search%";
-        $courses = Course::with('level')->where('name', 'LIKE', $term)
+        $courses = Course::with('level')
+            ->where('title', 'LIKE', $term)
+            ->orWhere('code', 'LIKE', $term)
+            ->orWhere('unit', 'LIKE', $term)
             ->orWhereHas('level', function (Builder $query) {
                 $query->where('name', 'LIKE', "%$this->search%");
             })->paginate($this->perPage);

@@ -1,14 +1,17 @@
 <div class="flex flex-col w-full mx-auto gap-8 p-8 xl:p-8 2xl:p-10 xl:gap-8 2xl:gap-10">
   <div class="flex items-center justify-between space-x-6">
     {{-- <x-sortby /> --}}
-    <form class="flex items-center gap-4" wire:submit.prevent="save">
+    <form class="flex gap-4" wire:submit.prevent="save">
       <div class="max-w-max">
-        <input type="text" wire:model="name" class="rounded-lg border p-2">
+        <input type="text" wire:model="name" class="rounded-lg border p-2"><br>
         @error('name')
         <small class="text-red-600 text-sm w-full">{{ $message }}</small>
         @enderror
       </div>
-      <button type="submit" class="bg-primary text-white px-6 py-2 rounded">Add Level</button>
+      <div>
+        <button type="submit" class="bg-primary text-white px-6 py-2 rounded block max-w-max">Add Level</button>
+      </div>
+
     </form>
     <x-search name="level" />
   </div>

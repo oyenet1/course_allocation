@@ -11,6 +11,10 @@ class CourseAllocation extends Model
     use HasFactory, BelongsToUser;
     protected $guarded = [];
 
+    protected $casts = [
+        'departments' => 'array',
+    ];
+
     function semester()
     {
         return $this->belongsTo(Semester::class);

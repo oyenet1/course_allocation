@@ -43,7 +43,6 @@
   <meta property="twitter:image:width" content="1920" />
   <meta property="twitter:image:height" content="960" />
 
-
   <style>
     [x-cloak] {
       display: none !important;
@@ -69,7 +68,7 @@
         </a>
         <div class="navbar-item">
           <div class="control">
-            <input placeholder="Search everywhere..." class="input" />
+            <p class="text-center text-xl">Course Allocation System</p>
           </div>
         </div>
       </div>
@@ -112,11 +111,11 @@
                 <span>Log Out</span>
               </a>
             </div>
-            <form class="hidden logout-form" id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST">
+            <form class="logout-form hidden" id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST">
               <?php echo csrf_field(); ?>
             </form>
           </div>
-          <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Log out" class="navbar-item hover:text-secondary desktop-icon-only" href="<?php echo e(route('logout')); ?>">
+          <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Log out" class="navbar-item desktop-icon-only hover:text-secondary" href="<?php echo e(route('logout')); ?>">
             <span class="icon"><i class="mdi mdi-logout"></i></span>
             <span>Log out</span>
           </a>
@@ -124,15 +123,15 @@
       </div>
     </nav>
 
-    <aside class="overflow-y-auto bg-white border-r aside is-placed-left is-expanded">
+    <aside class="aside is-placed-left is-expanded overflow-y-auto border-r bg-white">
       <div class="aside-tools bg-primary-light">
-        <div class="mx-auto font-black text-center uppercase text-primary">
+        <div class="mx-auto text-center font-black uppercase text-primary">
           Uniabuja Portal
         </div>
       </div>
-      <div class="space-y-1 overflow-y-auto menu is-menu-main">
+      <div class="menu is-menu-main space-y-1 overflow-y-auto">
         <p class="px-4 py-2 capitalize"><?php echo e(greeting() . ', '); ?> <span class="font-medium"><?php echo e(currentUser()->roles[0]->name); ?></span></p>
-        <ul class="space-y-1 menu-list">
+        <ul class="menu-list space-y-1">
           <li class="<?php echo e(request()->is('*/home') ? 'active' : ''); ?>">
             <a href="/">
               <span class="icon">
@@ -177,9 +176,10 @@
           </li>
         </ul>
         <p class="menu-label">Course Management</p>
-        <ul class="space-y-1 menu-list">
+        <ul class="menu-list space-y-1">
+          <?php if(auth()->user()->hasRole('administrator')): ?>
           <li>
-            <a class="dropdown <?php echo e(request()->is('*/courses') ? 'active' : ''); ?>">
+            <a class="dropdown <?php echo e(request()->is('admin/courses*') ? 'active' : ''); ?>">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
@@ -188,20 +188,23 @@
               <span class="menu-item-label">Manage Courses</span>
               <span class="icon"><i class="mdi mdi-plus"></i></span>
             </a>
-            <ul class="bg-white ">
-              <li class="<?php echo e(request()->is('admin/courses') ? 'active' : ''); ?>">
+            <ul class="bg-white">
+              <li class="<?php echo e(request()->is('admin/courses') ? 'active' : 'bg-white'); ?>">
                 <a href="<?php echo e(route('courses')); ?>" class="">
                   <span class="md:pl-8">Courses</span>
                 </a>
               </li>
-              <li class=" <?php echo e(request()->is('admin/allocation') ? 'bg-primary-light  border-l-4 border-white' : 'bg-white'); ?>">
-                <a href="" class="">
+              <li class="<?php echo e(request()->is('admin/courses/allocation') ? 'bg-primary-light  border-l-4 border-white' : 'bg-white'); ?>">
+                <a href="<?php echo e(route('allocations')); ?>" class="">
                   <span class="md:pl-8">Course Allocation</span>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="--set-active-profile-html ">
+
+
+          <?php else: ?>
+          <li class="--set-active-profile-html">
             <a href="">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
@@ -211,7 +214,9 @@
               <span class="menu-item-label">My Lessons</span>
             </a>
           </li>
+          <?php endif; ?>
         </ul>
+
       </div>
 
       
@@ -222,25 +227,25 @@
 
     </main>
 
-    <footer class="w-full text-white footer bg-primary">
+    <footer class="footer w-full bg-primary-dark text-white">
       <div class="flex flex-col items-center justify-between space-y-3 text-sm md:flex-row md:space-y-0">
-        <div></div>
-        <div class="flex items-center justify-start space-x-3 uppercase">
-          <div>© All right reserved <?php echo e(date('Y')); ?> Course Allocation System.</div>
-
-
-
-        </div>
-
         <div>
           <p>
             Designed and Developed:
-            <a href="https://bowofade.com/" class="text-secondary" target="_blank">Networker</a>
+            <a href="https://bowofade.com/" class="text-primary" target="_blank">Networker</a>
           </p>
         </div>
 
+
+        <div class="flex items-center justify-start space-x-3 uppercase">
+          <div>© All right reserved 2023 Course Allocation System.</div>
+        </div>
       </div>
     </footer>
+
+    <div class="fixed bottom-12 left-4 z-50 max-w-max cursor-pointer rounded-3xl bg-purple-600 px-4 py-2 text-white">
+      <a href="https://bowofade.com" target="_blank" class="text-sm">Contact me</a>
+    </div>
   </div>
 
   <!-- Scripts below are for demo only -->
@@ -249,7 +254,6 @@
   <?php echo \Livewire\Livewire::scripts(); ?>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
   <script>
     // success message
@@ -286,7 +290,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   
   <script type="text/javascript" src="/js/chart.sample.min.js"></script>
-
 
   <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
 

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 class Users extends Component
 {
-    public $name, $username, $delete, $email, $phone, $cid, $role;
+    public $first_name, $last_name, $username, $title, $delete, $email, $phone, $cid, $role;
     public $code = "+234";
 
     // public User $users;
@@ -46,24 +46,27 @@ class Users extends Component
 
     function refreshInputs()
     {
-        $this->name = '';
-        $this->username = '';
-        $this->role = '';
-        $this->phone = '';
-        $this->email = '';
-        $this->cid = '';
+        $this->first_name = null;
+        $this->last_name = null;
+        $this->username = null;
+        $this->role = null;
+        $this->title = null;
+        $this->phone = null;
+        $this->email = null;
+        $this->cid = null;
         $this->code = "+234";
         $this->resetPage();
         $this->checked = [];
         $this->update = false;
-        $this->search = '';
+        $this->search = null;
     }
 
     protected $rules = [
-        'name' => 'required',
+        'first_name' => 'required',
+        'last_name' => 'required',
+        'title' => 'required',
         'username' => 'required|unique:users',
         'email' => 'required|email|unique:users',
-        'phone' => 'required|unique:users|numeric|digits_between:10,11',
         'role' => ['required', 'not_in:select,nurse,Nurse']
     ];
 
@@ -75,28 +78,21 @@ class Users extends Component
     function save()
     {
         $data = $this->validate();
-
-        // $this->phone = trimPhone($this->code, $this->phone); //function from helpers,
-
-
         $user = User::create($data);
         $saved = $user->attachRole($this->role);
+        $lecturer = $user->title . ' ' . $user->first_name;
 
         try {
 
             if ($saved) {
-                // welcome email to the users
-                // $user->notify(new WelcomeMessage($user));
-                // send notifications to users(admins)
-                // sendNotifyToAdmin($user);
                 $this->form = false;
 
                 $this->dispatchBrowserEvent('swal:success', [
                     'icon' => 'success',
                     'confirmButton' => '#0d2364',
-                    'text' => 'A user has been added from the system',
-                    'title' => 'Added Successfully',
-                    'timer' => 3000,
+                    'text' => $lecturer . ' has been added as lecturer into the system',
+                    'title' => 'Lecturer added Successfully',
+                    'timer' => 5000,
                 ]);
 
                 $this->refreshInputs();
@@ -197,20 +193,15 @@ class Users extends Component
     public function render()
     {
         $term = "%$this->search%";
-        $users = User::with(['roles'])
-            ->where('name', 'LIKE', $term)
+        $users = User::where('first_name', 'LIKE', $term)
+            ->orWhere('last_name', 'LIKE', $term)
             ->orWhere('username', 'LIKE', $term)
             ->orWhere('email', 'LIKE', $term)
+            ->orWhere('title', 'LIKE', $term)
             ->orWhereHas('roles', function (Builder $query) {
                 $term = "%$this->search%";
                 $query->where('name', 'LIKE', strtolower($term));
             })
-                // ->orWhereHas('profile', function (Builder $query) {
-                //     $term = "%$this->search%";
-                //     $query->where('country', 'LIKE', $term)
-                //         ->orWhere('wallet_type', 'LIKE', $term)
-                //         ->orWhere('state', 'LIKE', $term);
-                // })
             ->paginate($this->perPage);
         return view('livewire.users', compact(['users']));
     }
