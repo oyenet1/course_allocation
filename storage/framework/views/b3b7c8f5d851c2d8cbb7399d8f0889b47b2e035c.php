@@ -52,7 +52,7 @@
     a.active,
     .confirmButton {
       color: white !important;
-      background: #0d2364;
+      background: #009933;
     }
 
   </style>
@@ -155,43 +155,52 @@
               <span class="menu-item-label">Profile</span>
             </a>
           </li>
-          <li class="--set-active-profile-html <?php echo e(request()->is('messages') ? 'active' : ''); ?>">
+          <li class="<?php echo e(request()->is('admin/users') ? 'active' : ''); ?>">
+            <a href="<?php echo e(route('lecturers')); ?>">
+              <span class="icon">
+                <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M19 13C19.34 13 19.67 13.04 20 13.09V10C20 8.9 19.11 8 18 8H17V6C17 3.24 14.76 1 12 1S7 3.24 7 6H9C9 4.34 10.34 3 12 3S15 4.34 15 6V8H6C4.89 8 4 8.9 4 10V20C4 21.1 4.89 22 6 22H13.81C13.3 21.12 13 20.1 13 19C13 15.69 15.69 13 19 13M12 17C10.9 17 10 16.11 10 15S10.9 13 12 13 14 13.9 14 15 13.11 17 12 17M22.5 17.25L17.75 22L15 19L16.16 17.84L17.75 19.43L21.34 15.84L22.5 17.25Z" />
+                </svg>
+              </span>
+              <span class="menu-item-label">Lecturers</span>
+            </a>
+          </li>
+          <li class="<?php echo e(request()->is('admin/levels') ? 'active' : ''); ?>">
             <a href="">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H5.2L4 17.2V4H20V16M17 11H15V9H17M13 11H11V9H13M9 11H7V9H9" />
-                </svg></span>
-              <span class="menu-item-label">Messages</span>
+                  <path fill="currentColor" d="M19 13C19.34 13 19.67 13.04 20 13.09V10C20 8.9 19.11 8 18 8H17V6C17 3.24 14.76 1 12 1S7 3.24 7 6H9C9 4.34 10.34 3 12 3S15 4.34 15 6V8H6C4.89 8 4 8.9 4 10V20C4 21.1 4.89 22 6 22H13.81C13.3 21.12 13 20.1 13 19C13 15.69 15.69 13 19 13M12 17C10.9 17 10 16.11 10 15S10.9 13 12 13 14 13.9 14 15 13.11 17 12 17M22.5 17.25L17.75 22L15 19L16.16 17.84L17.75 19.43L21.34 15.84L22.5 17.25Z" />
+                </svg>
+              </span>
+              <span class="menu-item-label">Levels</span>
             </a>
           </li>
         </ul>
-        <p class="menu-label">User Management</p>
+        <p class="menu-label">Course Management</p>
         <ul class="space-y-1 menu-list">
           <li>
-            <a class="dropdown <?php echo e(request()->is('admin/users') ? 'active' : ''); ?>">
+            <a class="dropdown <?php echo e(request()->is('courses/*') ? 'active' : ''); ?>">
               <span class="icon">
                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
                 </svg>
               </span>
-              <span class="menu-item-label">Users</span>
+              <span class="menu-item-label">Manage Courses</span>
               <span class="icon"><i class="mdi mdi-plus"></i></span>
             </a>
             <ul class="bg-white ">
-              <li class=" <?php echo e(request()->is('admin/users') ? 'bg-primary-200  border-l-4 border-white' : 'bg-white'); ?>">
-                <a href="<?php echo e(route('users')); ?>" class="">
-                  <span class="md:pl-8">Manage Users</span>
-                </a>
-              </li>
               <li class="bg-white">
                 <a href="#void" class="">
-                  <span class="md:pl-8">Manage Users Roles</span>
+                  <span class="md:pl-8">Courses</span>
                 </a>
               </li>
-
+              <li class=" <?php echo e(request()->is('admin/allocation') ? 'bg-primary-light  border-l-4 border-white' : 'bg-white'); ?>">
+                <a href="" class="">
+                  <span class="md:pl-8">Course Allocation</span>
+                </a>
+              </li>
             </ul>
           </li>
-
           <li class="--set-active-profile-html ">
             <a href="">
               <span class="icon">
@@ -199,17 +208,7 @@
                   <path fill="currentColor" d="M19 13C19.34 13 19.67 13.04 20 13.09V10C20 8.9 19.11 8 18 8H17V6C17 3.24 14.76 1 12 1S7 3.24 7 6H9C9 4.34 10.34 3 12 3S15 4.34 15 6V8H6C4.89 8 4 8.9 4 10V20C4 21.1 4.89 22 6 22H13.81C13.3 21.12 13 20.1 13 19C13 15.69 15.69 13 19 13M12 17C10.9 17 10 16.11 10 15S10.9 13 12 13 14 13.9 14 15 13.11 17 12 17M22.5 17.25L17.75 22L15 19L16.16 17.84L17.75 19.43L21.34 15.84L22.5 17.25Z" />
                 </svg>
               </span>
-              <span class="menu-item-label">Manage password</span>
-            </a>
-          </li>
-          <li class="--set-active-profile-html">
-            <a href="">
-              <span class="icon">
-                <svg style="width:20px;height:20px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M17 14H19V17H22V19H19V22H17V19H14V17H17V14M20 12C20 8.64 17.93 5.77 15 4.59V5C15 6.1 14.1 7 13 7H11V9C11 9.55 10.55 10 10 10H8V12H14C14.5 12 14.9 12.35 15 12.81C13.2 13.85 12 15.79 12 18C12 19.5 12.54 20.85 13.44 21.9L12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12L21.9 13.44C21.34 12.96 20.7 12.59 20 12.34L20 12M11 19.93V18C9.9 18 9 17.1 9 16V15L4.21 10.21C4.08 10.78 4 11.38 4 12C4 16.08 7.06 19.44 11 19.93Z" />
-                </svg>
-              </span>
-              <span class="menu-item-label">IP Address Ranges</span>
+              <span class="menu-item-label">My Lessons</span>
             </a>
           </li>
         </ul>
