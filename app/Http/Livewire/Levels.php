@@ -18,13 +18,16 @@ class Levels extends Component
     }
 
     protected $messages = [
-        'name.unique' => 'Level with the same name already exits.'
+        'name.unique' => 'Level with the same name already exits.',
+        'name.numeric' => 'Level must be 3digit number from 100 to 600',
+        'name.digits' => 'Level must be 3digit number from 100 to 600',
+        'name.multiple_of' => 'Level must be multiple of 100'
     ];
 
     function save()
     {
         $data = $this->validate([
-            'name' => ['required', 'unique:levels,name'],
+            'name' => ['required', 'unique:levels,name', 'numeric', 'min:100', 'digits:3', 'multiple_of:100'],
         ]);
 
         $true = Level::create($data);
