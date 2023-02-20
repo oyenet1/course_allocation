@@ -27,6 +27,81 @@ class Courses extends Component
         $this->form = null;
         $this->update = null;
     }
+
+    function add()
+    {
+        $this->update = false;
+    }
+
+    function showForm()
+    {
+        $this->form = true;
+    }
+
+    function save()
+    {
+        $data = $this->validate([
+            'title' => 'required',
+            'code' => 'required|unique:courses',
+            'unit' => 'required|min:1|numeric|digits:1',
+            'level_id' => 'required',
+        ]);
+        $saved = Course::create($data);
+
+        if ($saved) {
+            $this->form = false;
+
+            $this->dispatchBrowserEvent('swal:success', [
+                'icon' => 'success',
+                'confirmButton' => '#0d2364',
+                'text' => $saved->code . ' has been added to list of courses',
+                'title' => 'Course added Successfully',
+                'timer' => 5000,
+            ]);
+
+            $this->refreshInputs();
+        }
+        return redirect()->back();
+    }
+
+    function edit(Course $course)
+    {
+        $this->cid = $course->id;
+        $this->code = $course->code;
+        $this->unit = $course->unit;
+        $this->level_id = $course->level_id;
+        $this->title = $course->title;
+        $this->form = true;
+        $this->update = true;
+    }
+
+    function update()
+    {
+        $data = $this->validate([
+            'title' => 'required',
+            'code' => 'required|unique:courses,' . $this->cid,
+            'unit' => 'required|min:1|numeric|digits:1',
+            'level_id' => 'required',
+        ]);
+        $saved = Course::find($this->cid)->update($data);
+
+        if ($saved) {
+            $this->form = false;
+
+            $this->dispatchBrowserEvent('swal:success', [
+                'icon' => 'success',
+                'confirmButton' => '#0d2364',
+                'text' => 'Course has been corrected and updated',
+                'title' => 'Course updated Successfully',
+                'timer' => 5000,
+            ]);
+
+            $this->refreshInputs();
+        }
+        return redirect()->back();
+    }
+
+
     protected $listeners = [
         'deleteConfirm' => 'delete',
         'deleteMutipleConfirm' => 'buckDelete'

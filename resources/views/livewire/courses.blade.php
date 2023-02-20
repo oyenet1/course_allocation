@@ -3,21 +3,19 @@
   {{-- modal forms and inputs components --}}
   <x-modal class="max-w-lg">
     <x-form title="course" :update="$update">
-      <x-text-input label="Full name*" name="name" type="text" wire:model.defer="name" />
-      <x-text-input label="coursename*" name="coursename" type="text" wire:model.defer="coursename" />
+      <x-text-input label="Course Title*" name="title" type="text" wire:model.defer="title" />
       <div class="flex items-center justify-between w-full">
-        <x-text-input label="phone*" name="phone" type="text" wire:model.defer="phone" class="w-[96%]" />
-        <x-text-input label="Email*" name="email" type="text" wire:model.defer="email" class="w-[96%]" />
+        <x-text-input label="Course code*" name="code" type="text" wire:model.defer="code" class="w-[96%]" />
+        <x-text-input label="Course Unit*" name="unit" type="text" wire:model.defer="unit" class="w-[96%]" />
       </div>
-      {{-- position --}}
       <div class="w-full h-12 space-y-1">
-        <select wire:model.defer="role" class='w-full h-full pl-4 space-y-1 font-medium text-gray-500 placeholder-gray-500 capitalize bg-gray-100 border-0 rounded peer tt focus:border-2 focus:border-primary focus:bg-white focus:outline-none' id="">
-          <option value="select" class="text-sm">Role*</option>
-          @foreach (\App\Models\Role::select(['id', 'name'])->get() as $option)
-          <option class="py-2 capitalize" value="{{ $option->name }}">{{ $option->name }}</option>
+        <select wire:model.defer="level_id" class='w-full h-full pl-4 space-y-1 font-medium text-gray-500 placeholder-gray-500 capitalize bg-gray-100 border-0 rounded peer tt focus:border-2 focus:border-primary focus:bg-white focus:outline-none' id="">
+          <option value="select" class="text-sm">Level*</option>
+          @foreach (\App\Models\Level::select(['id', 'name'])->get() as $option)
+          <option class="py-2 capitalize" value="{{ $option->id }}">{{ $option->name }}</option>
           @endforeach
         </select>
-        @error('role')
+        @error('level_id')
         <span class="text-red-600">{{ $message }}</span>
         @enderror
       </div>
