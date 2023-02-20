@@ -5163,3 +5163,651 @@ Stack trace:
 #51 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
 #52 {main}
 "} 
+[2023-02-20 01:47:34] local.ERROR: Call to undefined method App\Models\Course::courses() {"userId":1,"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Models\\Course::courses() at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:71)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('courses')
+#1 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2321): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'courses', Array)
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(864): Illuminate\\Database\\Eloquent\\Model->__call('courses', Array)
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(104): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\Concerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(865): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(39): Illuminate\\Database\\Eloquent\\Builder->getRelationWithoutConstraints('courses')
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(183): Illuminate\\Database\\Eloquent\\Builder->has('courses', '>=', 1, 'or', Object(Closure))
+#7 /Users/user/Documents/projects/course_allocation/app/Http/Livewire/Courses.php(56): Illuminate\\Database\\Eloquent\\Builder->orWhereHas('courses', Object(Closure))
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Http\\Livewire\\Courses->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(173): Illuminate\\Container\\Container->call(Array)
+#14 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(131): Livewire\\Component->renderToView()
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(72): Livewire\\LifecycleManager->renderToView()
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Livewire\\Component->__invoke(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Routing\\Route))
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Livewire\\Courses), '__invoke')
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#70 {main}
+"} 
+[2023-02-20 01:48:40] local.ERROR: Call to undefined method App\Models\Course::courses() {"userId":1,"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Models\\Course::courses() at /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:71)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('courses')
+#1 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2321): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'courses', Array)
+#2 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(864): Illuminate\\Database\\Eloquent\\Model->__call('courses', Array)
+#3 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(104): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\Concerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(865): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(39): Illuminate\\Database\\Eloquent\\Builder->getRelationWithoutConstraints('courses')
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php(183): Illuminate\\Database\\Eloquent\\Builder->has('courses', '>=', 1, 'or', Object(Closure))
+#7 /Users/user/Documents/projects/course_allocation/app/Http/Livewire/Courses.php(58): Illuminate\\Database\\Eloquent\\Builder->orWhereHas('courses', Object(Closure))
+#8 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Http\\Livewire\\Courses->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(173): Illuminate\\Container\\Container->call(Array)
+#14 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(131): Livewire\\Component->renderToView()
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(72): Livewire\\LifecycleManager->renderToView()
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Livewire\\Component->__invoke(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Routing\\Route))
+#17 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Livewire\\Courses), '__invoke')
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#69 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#70 {main}
+"} 
+[2023-02-20 01:49:04] local.ERROR: Undefined variable $update {"view":{"view":"/Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-792299841 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1586</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-792299841\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","view":"<pre class=sf-dump id=sf-dump-1757124335 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"11 characters\">layouts.app</span>\"
+</pre><script>Sfdump(\"sf-dump-1757124335\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","params":"<pre class=sf-dump id=sf-dump-111392938 data-indent-pad=\"  \"><span class=sf-dump-note>array:1</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>attributes</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1716</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-111392938\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slotOrSection":"<pre class=sf-dump id=sf-dump-1814361965 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"4 characters\">slot</span>\"
+</pre><script>Sfdump(\"sf-dump-1814361965\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","manager":"<pre class=sf-dump id=sf-dump-1145662343 data-indent-pad=\"  \"><span class=sf-dump-note>Livewire\\LifecycleManager</span> {<a class=sf-dump-ref>#1666</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">request</span>: <span class=sf-dump-note title=\"Livewire\\Request
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Request</span> {<a class=sf-dump-ref href=#sf-dump-1145662343-ref21677 title=\"2 occurrences\">#1677</a><samp data-depth=2 id=sf-dump-1145662343-ref21677 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">fingerprint</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"20 characters\">9iWtnpTyPYfI3GHY37o4</span>\"
+      \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      \"<span class=sf-dump-key>locale</span>\" => \"<span class=sf-dump-str title=\"2 characters\">en</span>\"
+      \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"13 characters\">admin/courses</span>\"
+      \"<span class=sf-dump-key>method</span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">updates</span>: []
+    +<span class=sf-dump-public title=\"Public property\">memo</span>: []
+  </samp>}
+  +<span class=sf-dump-public title=\"Public property\">instance</span>: <span class=sf-dump-note title=\"App\\Http\\Livewire\\Courses
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Http\\Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Courses</span> {<a class=sf-dump-ref href=#sf-dump-1145662343-ref21653 title=\"3 occurrences\">#1653</a><samp data-depth=2 id=sf-dump-1145662343-ref21653 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">id</span>: \"<span class=sf-dump-str title=\"20 characters\">9iWtnpTyPYfI3GHY37o4</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">queryString</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">computedPropertyCache</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">shouldSkipRender</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">preRenderedView</span>: <span class=sf-dump-note title=\"Illuminate\\View\\View
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>View</span> {<a class=sf-dump-ref>#1669</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">factory</span>: <span class=sf-dump-note title=\"Illuminate\\View\\Factory
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Factory</span> {<a class=sf-dump-ref>#1587</a> &#8230;23}
+      #<span class=sf-dump-protected title=\"Protected property\">engine</span>: <span class=sf-dump-note title=\"Livewire\\LivewireViewCompilerEngine
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>LivewireViewCompilerEngine</span> {<a class=sf-dump-ref>#1647</a> &#8230;5}
+      #<span class=sf-dump-protected title=\"Protected property\">view</span>: \"<span class=sf-dump-str title=\"16 characters\">livewire.courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">data</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"91 characters\">/Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php</span>\"
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">forStack</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">errorBag</span>: <span class=sf-dump-note title=\"Illuminate\\Support\\MessageBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>MessageBag</span> {<a class=sf-dump-ref href=#sf-dump-1145662343-ref21667 title=\"2 occurrences\">#1667</a><samp data-depth=3 id=sf-dump-1145662343-ref21667 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">messages</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">format</span>: \"<span class=sf-dump-str title=\"8 characters\">:message</span>\"
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">withValidatorCallback</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">eventQueue</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">dispatchQueue</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">listeners</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>deleteConfirm</span>\" => \"<span class=sf-dump-str title=\"6 characters\">delete</span>\"
+      \"<span class=sf-dump-key>deleteMutipleConfirm</span>\" => \"<span class=sf-dump-str title=\"10 characters\">buckDelete</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">redirectTo</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">renderedChildren</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">previouslyRenderedChildren</span>: []
+    +<span class=sf-dump-public title=\"Public property\">title</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">unit</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">code</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">level_id</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">cid</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">search</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">perPage</span>: <span class=sf-dump-num>12</span>
+    +<span class=sf-dump-public title=\"Public property\">page</span>: <span class=sf-dump-num>1</span>
+    +<span class=sf-dump-public title=\"Public property\">paginators</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>page</span>\" => <span class=sf-dump-num>1</span>
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">numberOfPaginatorsRendered</span>: []
+  </samp>}
+  +<span class=sf-dump-public title=\"Public property\">response</span>: <span class=sf-dump-note title=\"Livewire\\Response
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Response</span> {<a class=sf-dump-ref>#1648</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">request</span>: <span class=sf-dump-note title=\"Livewire\\Request
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Request</span> {<a class=sf-dump-ref href=#sf-dump-1145662343-ref21677 title=\"2 occurrences\">#1677</a>}
+    +<span class=sf-dump-public title=\"Public property\">fingerprint</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"20 characters\">9iWtnpTyPYfI3GHY37o4</span>\"
+      \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      \"<span class=sf-dump-key>locale</span>\" => \"<span class=sf-dump-str title=\"2 characters\">en</span>\"
+      \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"13 characters\">admin/courses</span>\"
+      \"<span class=sf-dump-key>method</span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">effects</span>: []
+    +<span class=sf-dump-public title=\"Public property\">memo</span>: []
+  </samp>}
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1145662343\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":1,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $update at /Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php:5)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', '/Users/user/Doc...', 14)
+#1 /Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php(5): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', '/Users/user/Doc...', 14)
+#2 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(83): include('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(84): App\\Http\\Livewire\\Courses->Livewire\\ComponentConcerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(59): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#7 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#8 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(235): Illuminate\\View\\View->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/HydrationMiddleware/RenderView.php(14): Livewire\\Component->output()
+#10 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(141): Livewire\\HydrationMiddleware\\RenderView::dehydrate(Object(App\\Http\\Livewire\\Courses), Object(Livewire\\Response))
+#11 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php(3): Livewire\\LifecycleManager->initialDehydrate()
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#69 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#73 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#75 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#76 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $update at /Users/user/Documents/projects/course_allocation/storage/framework/views/34d1805155a84788855d69acc86f81ed4b888e3e.php:14)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', '/Users/user/Doc...', 14)
+#1 /Users/user/Documents/projects/course_allocation/storage/framework/views/34d1805155a84788855d69acc86f81ed4b888e3e.php(14): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', '/Users/user/Doc...', 14)
+#2 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(83): include('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(84): App\\Http\\Livewire\\Courses->Livewire\\ComponentConcerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(59): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#7 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#8 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(235): Illuminate\\View\\View->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/HydrationMiddleware/RenderView.php(14): Livewire\\Component->output()
+#10 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(141): Livewire\\HydrationMiddleware\\RenderView::dehydrate(Object(App\\Http\\Livewire\\Courses), Object(Livewire\\Response))
+#11 /Users/user/Documents/projects/course_allocation/storage/framework/views/cfe97bf8c4d529b71e9a9404da71465c3c9e7af0.php(3): Livewire\\LifecycleManager->initialDehydrate()
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#69 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#73 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#75 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#76 {main}
+"} 
+[2023-02-20 01:49:57] local.ERROR: Undefined variable $checked {"view":{"view":"/Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1348090315 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1586</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1348090315\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","view":"<pre class=sf-dump id=sf-dump-207959847 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"11 characters\">layouts.app</span>\"
+</pre><script>Sfdump(\"sf-dump-207959847\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","params":"<pre class=sf-dump id=sf-dump-1314533690 data-indent-pad=\"  \"><span class=sf-dump-note>array:1</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>attributes</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1716</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1314533690\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slotOrSection":"<pre class=sf-dump id=sf-dump-635328975 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"4 characters\">slot</span>\"
+</pre><script>Sfdump(\"sf-dump-635328975\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","manager":"<pre class=sf-dump id=sf-dump-1485964722 data-indent-pad=\"  \"><span class=sf-dump-note>Livewire\\LifecycleManager</span> {<a class=sf-dump-ref>#1666</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">request</span>: <span class=sf-dump-note title=\"Livewire\\Request
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Request</span> {<a class=sf-dump-ref href=#sf-dump-1485964722-ref21679 title=\"2 occurrences\">#1679</a><samp data-depth=2 id=sf-dump-1485964722-ref21679 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">fingerprint</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"20 characters\">LO60CtERYpWHPyRlJtQZ</span>\"
+      \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      \"<span class=sf-dump-key>locale</span>\" => \"<span class=sf-dump-str title=\"2 characters\">en</span>\"
+      \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"13 characters\">admin/courses</span>\"
+      \"<span class=sf-dump-key>method</span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">updates</span>: []
+    +<span class=sf-dump-public title=\"Public property\">memo</span>: []
+  </samp>}
+  +<span class=sf-dump-public title=\"Public property\">instance</span>: <span class=sf-dump-note title=\"App\\Http\\Livewire\\Courses
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Http\\Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Courses</span> {<a class=sf-dump-ref href=#sf-dump-1485964722-ref21651 title=\"3 occurrences\">#1651</a><samp data-depth=2 id=sf-dump-1485964722-ref21651 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">id</span>: \"<span class=sf-dump-str title=\"20 characters\">LO60CtERYpWHPyRlJtQZ</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">queryString</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">computedPropertyCache</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">shouldSkipRender</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">preRenderedView</span>: <span class=sf-dump-note title=\"Illuminate\\View\\View
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>View</span> {<a class=sf-dump-ref>#1671</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">factory</span>: <span class=sf-dump-note title=\"Illuminate\\View\\Factory
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Factory</span> {<a class=sf-dump-ref>#1587</a> &#8230;23}
+      #<span class=sf-dump-protected title=\"Protected property\">engine</span>: <span class=sf-dump-note title=\"Livewire\\LivewireViewCompilerEngine
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>LivewireViewCompilerEngine</span> {<a class=sf-dump-ref>#1645</a> &#8230;5}
+      #<span class=sf-dump-protected title=\"Protected property\">view</span>: \"<span class=sf-dump-str title=\"16 characters\">livewire.courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">data</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"91 characters\">/Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php</span>\"
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">forStack</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">errorBag</span>: <span class=sf-dump-note title=\"Illuminate\\Support\\MessageBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>MessageBag</span> {<a class=sf-dump-ref href=#sf-dump-1485964722-ref21669 title=\"2 occurrences\">#1669</a><samp data-depth=3 id=sf-dump-1485964722-ref21669 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">messages</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">format</span>: \"<span class=sf-dump-str title=\"8 characters\">:message</span>\"
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">withValidatorCallback</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">eventQueue</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">dispatchQueue</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">listeners</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>deleteConfirm</span>\" => \"<span class=sf-dump-str title=\"6 characters\">delete</span>\"
+      \"<span class=sf-dump-key>deleteMutipleConfirm</span>\" => \"<span class=sf-dump-str title=\"10 characters\">buckDelete</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">redirectTo</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">renderedChildren</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">previouslyRenderedChildren</span>: []
+    +<span class=sf-dump-public title=\"Public property\">title</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">unit</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">code</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">level_id</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">cid</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">search</span>: <span class=sf-dump-const>null</span>
+    +<span class=sf-dump-public title=\"Public property\">perPage</span>: <span class=sf-dump-num>12</span>
+    +<span class=sf-dump-public title=\"Public property\">form</span>: <span class=sf-dump-const>false</span>
+    +<span class=sf-dump-public title=\"Public property\">update</span>: <span class=sf-dump-const>false</span>
+    +<span class=sf-dump-public title=\"Public property\">page</span>: <span class=sf-dump-num>1</span>
+    +<span class=sf-dump-public title=\"Public property\">paginators</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>page</span>\" => <span class=sf-dump-num>1</span>
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">numberOfPaginatorsRendered</span>: []
+  </samp>}
+  +<span class=sf-dump-public title=\"Public property\">response</span>: <span class=sf-dump-note title=\"Livewire\\Response
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Response</span> {<a class=sf-dump-ref>#83</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">request</span>: <span class=sf-dump-note title=\"Livewire\\Request
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Livewire</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Request</span> {<a class=sf-dump-ref href=#sf-dump-1485964722-ref21679 title=\"2 occurrences\">#1679</a>}
+    +<span class=sf-dump-public title=\"Public property\">fingerprint</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"20 characters\">LO60CtERYpWHPyRlJtQZ</span>\"
+      \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      \"<span class=sf-dump-key>locale</span>\" => \"<span class=sf-dump-str title=\"2 characters\">en</span>\"
+      \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"13 characters\">admin/courses</span>\"
+      \"<span class=sf-dump-key>method</span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET</span>\"
+    </samp>]
+    +<span class=sf-dump-public title=\"Public property\">effects</span>: []
+    +<span class=sf-dump-public title=\"Public property\">memo</span>: []
+  </samp>}
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1485964722\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":1,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $checked at /Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php:30)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', '/Users/user/Doc...', 119)
+#1 /Users/user/Documents/projects/course_allocation/resources/views/livewire/courses.blade.php(30): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', '/Users/user/Doc...', 119)
+#2 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(83): include('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(84): App\\Http\\Livewire\\Courses->Livewire\\ComponentConcerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(59): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#7 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#8 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(235): Illuminate\\View\\View->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/HydrationMiddleware/RenderView.php(14): Livewire\\Component->output()
+#10 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(141): Livewire\\HydrationMiddleware\\RenderView::dehydrate(Object(App\\Http\\Livewire\\Courses), Object(Livewire\\Response))
+#11 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php(3): Livewire\\LifecycleManager->initialDehydrate()
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#69 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#73 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#75 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#76 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $checked at /Users/user/Documents/projects/course_allocation/storage/framework/views/34d1805155a84788855d69acc86f81ed4b888e3e.php:119)
+[stacktrace]
+#0 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', '/Users/user/Doc...', 119)
+#1 /Users/user/Documents/projects/course_allocation/storage/framework/views/34d1805155a84788855d69acc86f81ed4b888e3e.php(119): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', '/Users/user/Doc...', 119)
+#2 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(83): include('/Users/user/Doc...')
+#3 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(84): App\\Http\\Livewire\\Courses->Livewire\\ComponentConcerns\\{closure}()
+#4 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(59): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#5 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#6 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#7 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#8 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/Component.php(235): Illuminate\\View\\View->render()
+#9 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/HydrationMiddleware/RenderView.php(14): Livewire\\Component->output()
+#10 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/LifecycleManager.php(141): Livewire\\HydrationMiddleware\\RenderView::dehydrate(Object(App\\Http\\Livewire\\Courses), Object(Livewire\\Response))
+#11 /Users/user/Documents/projects/course_allocation/storage/framework/views/cfe97bf8c4d529b71e9a9404da71465c3c9e7af0.php(3): Livewire\\LifecycleManager->initialDehydrate()
+#12 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('/Users/user/Doc...')
+#13 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/user/Doc...', Array)
+#15 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/user/Doc...', Array)
+#16 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(70): Livewire\\LivewireViewCompilerEngine->evaluatePath('/Users/user/Doc...', Array)
+#17 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/user/Doc...', Array)
+#18 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(152): Livewire\\LivewireViewCompilerEngine->get('/Users/user/Doc...', Array)
+#19 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(135): Illuminate\\View\\View->getContents()
+#20 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/View.php(104): Illuminate\\View\\View->renderContents()
+#21 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#22 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#26 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/user/Documents/projects/course_allocation/vendor/santigarcor/laratrust/src/Middleware/LaratrustRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laratrust\\Middleware\\LaratrustRole->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'superadmin|admi...')
+#29 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /Users/user/Documents/projects/course_allocation/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/user/Documents/projects/course_allocation/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /Users/user/Documents/projects/course_allocation/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/user/Documents/projects/course_allocation/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#69 /Users/user/Documents/projects/course_allocation/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#70 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#73 /Users/user/Documents/projects/course_allocation/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#74 /Users/user/Documents/projects/course_allocation/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#75 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
+#76 {main}
+"} 
