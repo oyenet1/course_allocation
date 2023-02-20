@@ -65,14 +65,14 @@
     <button class="font-normal btn btn-secondary">Select All {{ count($checked) }}</button>
     <x-button.bulk-delete />
     @else
-    <x-button.add name="users" />
+    <x-button.add name="lecturers" />
     @endif
 
   </div>
 
   {{-- right side --}}
   <div class="flex items-center space-x-6">
-    <x-search name="users" />
+    <x-search name="lecturers" />
   </div>
 </div>
 
@@ -95,7 +95,7 @@
       @if ($user->id === 1)
       @continue
       @endif
-      <tr class="even:bg-primary-light">
+      <tr class="">
         <td class="p-2 whitespace-nowrap">
           <input type="checkbox" wire:model="checked" id="" value="{{ $user->id }}" class="block rounded whitespace-nowrap text-primary focus:outline-none focus:ring-primary">
         </td>

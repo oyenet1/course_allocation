@@ -144,7 +144,7 @@ unset($__errorArgs, $__bag); ?>
 <?php endif; ?>
     <?php else: ?>
     <?php if (isset($component)) { $__componentOriginal1787de7e861320324705bc25177dcc87d6ebbb07 = $component; } ?>
-<?php $component = App\View\Components\Button\Add::resolve(['name' => 'users'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = App\View\Components\Button\Add::resolve(['name' => 'lecturers'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button.add'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
@@ -165,7 +165,7 @@ unset($__errorArgs, $__bag); ?>
   
   <div class="flex items-center space-x-6">
     <?php if (isset($component)) { $__componentOriginal9c20e82a484d0dd8436a68d661ca92fd15770a65 = $component; } ?>
-<?php $component = App\View\Components\Search::resolve(['name' => 'users'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = App\View\Components\Search::resolve(['name' => 'lecturers'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('search'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
@@ -201,7 +201,7 @@ unset($__errorArgs, $__bag); ?>
       <?php if($user->id === 1): ?>
       <?php continue; ?>
       <?php endif; ?>
-      <tr class="even:bg-primary-light">
+      <tr class="">
         <td class="p-2 whitespace-nowrap">
           <input type="checkbox" wire:model="checked" id="" value="<?php echo e($user->id); ?>" class="block rounded whitespace-nowrap text-primary focus:outline-none focus:ring-primary">
         </td>

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 class Users extends Component
 {
-    public $name, $username, $email, $phone, $cid, $role;
+    public $name, $username, $delete, $email, $phone, $cid, $role;
     public $code = "+234";
 
     // public User $users;
