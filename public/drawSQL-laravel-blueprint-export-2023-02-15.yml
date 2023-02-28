@@ -1,0 +1,39 @@
+models:
+    User:
+        id: id
+        first_name: string
+        last_name: string
+        role: string nullable
+        email: string unique
+        password: char
+        created_at: dateTime
+        updated_at: dateTime
+    Profile:
+        id: id
+        user_id: bigInteger index foreign:users.id
+        aos: json comment:"Area of concentration which is a json field which accept array as input"
+    Level:
+        id: id
+        name: integer
+    Course:
+        id: id
+        level_id: bigInteger index foreign:level.id
+        title: string
+        code: string unique
+        unit: integer
+    CourseAllocation:
+        id: id
+        user_id: integer index foreign:users.id
+        course_id: integer index foreign:courses.id
+        semester_id: integer index foreign:semester.id
+        departments: json
+        date_allocated: date
+        date_updated: date
+    Department:
+        id: id
+        name: string unique
+        date_created: date
+    Semester:
+        id: id
+        name: string unique
+        created_at: date
