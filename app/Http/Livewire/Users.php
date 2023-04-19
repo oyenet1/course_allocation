@@ -157,9 +157,9 @@ class Users extends Component
         if ($true) {
             $this->dispatchBrowserEvent('swal:success', [
                 'icon' => 'success',
-                'text' => 'A user has been removed to the system',
+                'text' => $user->first_name . 'has been removed from the system',
                 'title' => 'Deleted Successfully',
-                'timer' => 3000,
+                'timer' => 5000,
             ]);
         }
         $this->refreshInputs();
