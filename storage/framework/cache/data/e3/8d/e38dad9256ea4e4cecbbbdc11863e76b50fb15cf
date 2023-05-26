@@ -1,1 +1,0 @@
-1681924620a:1:{i:0;a:7:{s:2:"id";i:1;s:4:"name";s:13:"administrator";s:12:"display_name";s:13:"Administrator";s:11:"description";s:13:"Administrator";s:10:"created_at";s:27:"2023-02-20T13:37:05.000000Z";s:10:"updated_at";s:27:"2023-02-20T13:37:05.000000Z";s:5:"pivot";a:2:{s:7:"user_id";i:1;s:7:"role_id";i:1;}}}
