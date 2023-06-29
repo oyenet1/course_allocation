@@ -20,7 +20,7 @@ class Users extends Component
 
     public $selectedRole = null;
     public ?array $checked = [];
-    public $perPage = 25;
+    public $perPage = 10;
     public $sortField = 'id';
     public $sortAsc = true;
     public $search = '';
