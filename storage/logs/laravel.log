@@ -9442,3 +9442,101 @@ Did you mean one of these?
 #51 /Users/user/Documents/projects/course_allocation/server.php(21): require_once('/Users/user/Doc...')
 #52 {main}
 "} 
+[2023-09-14 19:55:46] local.ERROR: Database (C:\laragon\www\course_allocation\database\database.sqlite) does not exist. (SQL: PRAGMA foreign_keys = ON;) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): Database (C:\\laragon\\www\\course_allocation\\database\\database.sqlite) does not exist. (SQL: PRAGMA foreign_keys = ON;) at C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:760)
+[stacktrace]
+#0 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#1 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(546): Illuminate\\Database\\Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#2 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(380): Illuminate\\Database\\Connection->statement('PRAGMA foreign_...')
+#3 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\SQLiteConnection.php(35): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#4 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(272): Illuminate\\Database\\SQLiteConnection->__construct(Object(Closure), 'C:\\\\laragon\\\\www\\\\...', '', Array)
+#5 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('sqlite', Object(Closure), 'C:\\\\laragon\\\\www\\\\...', '', Array)
+#6 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#7 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(145): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'sqlite')
+#8 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(100): Illuminate\\Database\\DatabaseManager->makeConnection('sqlite')
+#9 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Connectors\\DatabaseConnector.php(37): Illuminate\\Database\\DatabaseManager->connection('sqlite')
+#10 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\QueueManager.php(163): Illuminate\\Queue\\Connectors\\DatabaseConnector->connect(Array)
+#11 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\QueueManager.php(138): Illuminate\\Queue\\QueueManager->resolve('database')
+#12 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkServiceProvider.php(171): Illuminate\\Queue\\QueueManager->connection()
+#13 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(871): Clockwork\\Support\\Laravel\\ClockworkServiceProvider->Clockwork\\Support\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#14 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(756): Illuminate\\Container\\Container->build(Object(Closure))
+#15 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(860): Illuminate\\Container\\Container->resolve('clockwork.queue', Array, true)
+#16 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(692): Illuminate\\Foundation\\Application->resolve('clockwork.queue', Array)
+#17 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(845): Illuminate\\Container\\Container->make('clockwork.queue', Array)
+#18 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1419): Illuminate\\Foundation\\Application->make('clockwork.queue')
+#19 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkSupport.php(154): Illuminate\\Container\\Container->offsetGet('clockwork.queue')
+#20 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkServiceProvider.php(236): Clockwork\\Support\\Laravel\\ClockworkSupport->addDataSources()
+#21 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(976): Clockwork\\Support\\Laravel\\ClockworkServiceProvider->Clockwork\\Support\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application))
+#22 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(919): Illuminate\\Foundation\\Application->fireAppCallbacks(Array)
+#23 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#24 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(242): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#25 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#26 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#27 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#28 C:\\laragon\\www\\course_allocation\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#29 {main}
+
+[previous exception] [object] (Illuminate\\Database\\SQLiteDatabaseDoesNotExistException(code: 0): Database (C:\\laragon\\www\\course_allocation\\database\\database.sqlite) does not exist. at C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\SQLiteConnector.php:34)
+[stacktrace]
+#0 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(221): Illuminate\\Database\\Connectors\\SQLiteConnector->connect(Array)
+#1 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#2 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1171): call_user_func(Object(Closure))
+#3 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(539): Illuminate\\Database\\Connection->getPdo()
+#4 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('PRAGMA foreign_...', Array)
+#5 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#6 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(546): Illuminate\\Database\\Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#7 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(380): Illuminate\\Database\\Connection->statement('PRAGMA foreign_...')
+#8 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\SQLiteConnection.php(35): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#9 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(272): Illuminate\\Database\\SQLiteConnection->__construct(Object(Closure), 'C:\\\\laragon\\\\www\\\\...', '', Array)
+#10 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('sqlite', Object(Closure), 'C:\\\\laragon\\\\www\\\\...', '', Array)
+#11 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(145): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'sqlite')
+#13 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(100): Illuminate\\Database\\DatabaseManager->makeConnection('sqlite')
+#14 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Connectors\\DatabaseConnector.php(37): Illuminate\\Database\\DatabaseManager->connection('sqlite')
+#15 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\QueueManager.php(163): Illuminate\\Queue\\Connectors\\DatabaseConnector->connect(Array)
+#16 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\QueueManager.php(138): Illuminate\\Queue\\QueueManager->resolve('database')
+#17 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkServiceProvider.php(171): Illuminate\\Queue\\QueueManager->connection()
+#18 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(871): Clockwork\\Support\\Laravel\\ClockworkServiceProvider->Clockwork\\Support\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#19 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(756): Illuminate\\Container\\Container->build(Object(Closure))
+#20 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(860): Illuminate\\Container\\Container->resolve('clockwork.queue', Array, true)
+#21 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(692): Illuminate\\Foundation\\Application->resolve('clockwork.queue', Array)
+#22 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(845): Illuminate\\Container\\Container->make('clockwork.queue', Array)
+#23 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1419): Illuminate\\Foundation\\Application->make('clockwork.queue')
+#24 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkSupport.php(154): Illuminate\\Container\\Container->offsetGet('clockwork.queue')
+#25 C:\\laragon\\www\\course_allocation\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkServiceProvider.php(236): Clockwork\\Support\\Laravel\\ClockworkSupport->addDataSources()
+#26 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(976): Clockwork\\Support\\Laravel\\ClockworkServiceProvider->Clockwork\\Support\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application))
+#27 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(919): Illuminate\\Foundation\\Application->fireAppCallbacks(Array)
+#28 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(242): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#32 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#33 C:\\laragon\\www\\course_allocation\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#34 {main}
+"} 
+[2023-09-14 20:16:47] local.ERROR: Command "migrate:fresh--seed" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:fresh--seed\" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at C:\\laragon\\www\\course_allocation\\vendor\\symfony\\console\\Application.php:700)
+[stacktrace]
+#0 C:\\laragon\\www\\course_allocation\\vendor\\symfony\\console\\Application.php(256): Symfony\\Component\\Console\\Application->find('migrate:fresh--...')
+#1 C:\\laragon\\www\\course_allocation\\vendor\\symfony\\console\\Application.php(168): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\laragon\\www\\course_allocation\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\laragon\\www\\course_allocation\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
