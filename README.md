@@ -11,21 +11,23 @@
 * git
 * mysql database
 + composer
-- System Architechure 
-    + Use case diagram  
+
+## System Architechure 
+
+   Use case diagram  
        A use case diagram is a diagram that shows the interaction between users and a system, it also helps to understand how the system is used and different actions it can perform. 
       ![Alt text](<readme img/Course allocation system Usecase diagram.png>)
 
-    + Data flow diagram 
+   Data flow diagram 
       A Data flow diagram shows how data moves through a system. It illustrates the flow of information between different processes, data sources and data destinations. 
       ![Alt text](<readme img/Course allocation system Dataflow diagram.png>)
 
-    * ERD (Entity Relationship diagram) 
+   ERD (Entity Relationship diagram) 
       This diagram shows the relationship between entities in a database. It helps to understand the structure and organisation of data in a database system. 
       ![Alt text](<readme img/erd.png>)    
 
 ## Installation Guide 
-To install this software the system(PC) should have the following things needed to load run the projects they are: git, phpv8, mysql database, composer. All this tools are available in a server called Laragon. Any other server can be used but the server must posses all the mentioned requirements needed to run the project. 
+To install this software the system(PC) should possess the system requirements listed above.
 
 Running this software project from GitHub involves a few steps. You can do this by either cloning the repository using Git or by downloading the project as a ZIP file. 
 
