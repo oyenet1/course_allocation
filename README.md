@@ -73,3 +73,34 @@ After successful download of the project
     **php artisan migrate:fresh --seed**
 
 -   Launch your project.
+
+## Features and Usage
+The system has various features, highlighted below is some of the features and usage.
+1. #### Add Lecturer
+    Lecturers from different departments can be added to the system by the administrator. Different lecturers from various fields can be added and levels and courses assigned to them.
+    Lecturers can also be removed(Deleted) from the system. You can also search for lecturers on the system.
+    ![Add lecturer](<public/img/add lecturer.jpeg>)
+    ![Add lecturer success](<public/img/success message for lecturer.jpeg>)
+    ![Lecturers Table](<public/img/lecturers table.jpeg>)
+    ![Lecturer Deleted](<public/img/lecturer deleted.jpeg>)
+
+
+2. #### Add Course
+    Courses varies across departments and levels.various courses can be added to the software which makes allocating courses easy. The software prevents duplication of assigning a course to different lectueres. 
+    ![Add Course](<public/img/add course.jpeg>)
+    ![Course added success](<public/img/course added sucess.jpeg>)
+    ![Courses table](<public/img/courses table..jpeg>)
+    ![Delete course](<public/img/Course delete.PNG>)
+
+
+    Course Allocation to is made easy with this system. Couses can be allocated to lecturers and levels assigned to them. Courses can be added and updated. Course allocation shows the course, the lecturer assigned to the course, the level offering the course and the semester. Courses can also be dissociated from lecturer. 
+    ![Allocation form](<public/img/allocation form.jpeg>)
+    ![Allocation success](<public/img/allocation success.jpeg>)
+    ![Allocation table](<public/img/allocation table.jpeg>)
+    ![Allocation delete](<public/img/deleted course allocation.jpeg>)
+
+3. #### Add Level
+    Courses have been arranged systematically for each level in an orderly manner. The system allows the admin to add different levels and also assign courses and lecturers to levels. Levels can also be removed from the system. 
+    ![Add Level](<public/img/Add Level.PNG>)
+    ![Level Table](<public/img/Level Table.PNG>)
+    ![Level Delete](<public/img/Delete Level.PNG>)
