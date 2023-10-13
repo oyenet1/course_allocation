@@ -33,7 +33,7 @@ A Data flow diagram shows how data moves through a system. It illustrates the fl
 
 ERD (Entity Relationship diagram)
 This diagram shows the relationship between entities in a database. It helps to understand the structure and organisation of data in a database system.
-![Alt text](/public/img/erd.png)
+![ERD diagram](/public/img/erd.png)
 
 ## Installation Guide
 
