@@ -37,7 +37,7 @@ A Data flow diagram shows how data moves through a system. It illustrates the fl
 
 ERD (Entity Relationship diagram)
 This diagram shows the relationship between entities in a database. It helps to understand the structure and organisation of data in a database system.
-![Alt text](/public/img/erd.png)
+![ERD Diagram](/public/img/erd.png)
 
 ## Installation Guide
 
@@ -113,24 +113,28 @@ Open a web browser and navigate to `http://127.0.0.1:8000` or the URL provided b
 
 By default, Laravel will start the development server on `http://127.0.0.1:8000`
 
-**Method 1: Downloading as a ZIP File**
-Download the project and put it in the www folder of laragon (Any other server can be used but the server must posses all the mentioned requirements needed to run the project).
-After successful cloning of the project
-Go to the GitHub repository of the project and download the project as a ZIP file.
-Extract the ZIP file to the directory where you want to store your project which is in the www folder of laragon (Any other server can be used but the server must posses all the mentioned requirements needed to run the project).
-After successful download of the project
+### Method 2: Downloading as a ZIP File
+**Step 1: Go to the github repositoty**
+```sh
+#Navigate to the GitHub repository of the project
+Download the project as a ZIP file.
+```
+**Step 2: Extract and save the file**
+```sh
+Extract the ZIP file 
+Into the the www folder of laragon 
 
--   Go into the project folder
--   Run **composer install** to install all dependencies
+```
+<!-- **Step 3: Install Dependencies**
+```
+Go to the project folder 
 
-*   Create an environmental file **.env** (this can be done by copying the **.env.example** file and adding all items into the **.env** file).
+Run 'composer install'
+``` -->
+```sh
+After successful download of the project, Follow from step 2 of method 1. 
+```
 
--   Set the database (the database can be created using laragon).
-
-*   Once the database is created run this command
-    **php artisan migrate:fresh --seed**
-
--   Launch your project.
 
 ## Features and Usage
 
