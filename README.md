@@ -35,7 +35,7 @@ A use case diagram is a diagram that shows the interaction between users and a s
 A Data flow diagram shows how data moves through a system. It illustrates the flow of information between different processes, data sources and data destinations.
 !["Dataflow diagram"](/public/img/Course_allocation_system_Dataflow_diagram.png)
 
-ERD (Entity Relationship diagram)
+### ERD (Entity Relationship diagram)
 This diagram shows the relationship between entities in a database. It helps to understand the structure and organisation of data in a database system.
 ![ERD Diagram](/public/img/erd.png)
 
@@ -67,16 +67,17 @@ cd course_allocation
 cp .env.example .env
 ```
 
-**STEP 3: Set Up the Environment Configuration**
+**STEP 3: Install Project Dependencies**
+
+```sh
+#Run composer install
+composer install
+```
+
+**STEP 4: Set Up the Environment Configuration**
 
 ```sh
 #Generate an application key:
-php artisan key:generate
-```
-
-**STEP 4: Install Project Dependencies**
-
-```sh
 php artisan key:generate
 ```
 
@@ -125,12 +126,7 @@ Extract the ZIP file
 Into the the www folder of laragon 
 
 ```
-<!-- **Step 3: Install Dependencies**
-```
-Go to the project folder 
 
-Run 'composer install'
-``` -->
 ```sh
 After successful download of the project, Follow from step 2 of method 1. 
 ```
@@ -157,7 +153,7 @@ The system has various features, highlighted below is some of the features and u
     ![Courses table](<public/img/courses table..jpeg>)
     ![Delete course](<public/img/Course delete.PNG>)
 
-    Course Allocation to is made easy with this system. Couses can be allocated to lecturers and levels assigned to them. Courses can be added and updated. Course allocation shows the course, the lecturer assigned to the course, the level offering the course and the semester. Courses can also be dissociated from lecturer.
+    **Course Allocation** to is made easy with this system. Couses can be allocated to lecturers and levels assigned to them. Courses can be added and updated. Course allocation shows the course, the lecturer assigned to the course, the level offering the course and the semester. Courses can also be dissociated from lecturer.
     ![Allocation form](<public/img/allocation form.jpeg>)
     ![Allocation success](<public/img/allocation success.jpeg>)
     ![Allocation table](<public/img/allocation table.jpeg>)
